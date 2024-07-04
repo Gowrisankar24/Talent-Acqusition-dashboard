@@ -15,7 +15,7 @@ export const CalendarInfo = () => {
   };
   return (
     <>
-      <div className="rounded-none shadow-2xl">
+      <div className="rounded-none shadow-2xl font-sans">
         <Calendar tileClassName={tilesClass} showDoubleView={false} showNavigation={true} />
       </div>
     </>

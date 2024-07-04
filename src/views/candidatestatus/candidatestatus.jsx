@@ -20,8 +20,8 @@ export const Candidatestatus = () => {
 
   const colDefs = [
     { field: "Jobid", headerName: "Job ID" },
-    { field: "Name", headerName: "Name" },
-    { field: "Position", headerName: "Position" },
+    { field: "Name", headerName: "Name", width: 150 },
+    { field: "Position", headerName: "Position", width: 170 },
     { field: "level1", headerName: "1st Level" },
     { field: "level2", headerName: "2nd Level" },
     {
@@ -42,13 +42,13 @@ export const Candidatestatus = () => {
     {
       field: "status", headerName: "Status", cellRenderer: (params) => {
         if (params?.value === 'Active') {
-          return <span className="text-[#e3904b] bg-[#ebcaae] p-1 space-x-2 font-medium">{params?.value}</span>;
+          return <span className="text-[#e3904b] bg-[#ebcaae] p-1.5 space-x-2 font-medium">{params?.value}</span>;
         }
         else if (params?.value === 'Reject') {
-          return <span className="text-[#de3a2f] bg-[#ff9b94] p-1 space-x-2 font-medium">{params?.value}</span>;
+          return <span className="text-[#de3a2f] bg-[#ff9b94] p-1.5 space-x-2 font-medium">{params?.value}</span>;
         }
         else if (params?.value === 'Hired') {
-          return <span className="text-[#55c96a] bg-[#a2f5b1] p-1 space-x-2 font-medium">{params?.value}</span>;
+          return <span className="text-[#55c96a] bg-[#a2f5b1] p-1.5 space-x-2 font-medium">{params?.value}</span>;
         }
       }
     },
@@ -108,11 +108,11 @@ export const Candidatestatus = () => {
           </>
         }
       >
-        <Row>
+        <Row gutter={(16, 16)}>
           <Col span={24}>
             <div
-              className="ag-theme-quartz interview-info" // applying the grid theme
-              style={{ height: 420 }} // the grid will fill the size of the parent container
+              className="ag-theme-quartz interview-info font-sans" // applying the grid theme
+              style={{ height: 350 }} // the grid will fill the size of the parent container
             >
               <AgGridReact rowData={rowData} columnDefs={colDefs} autoSizeStrategy={autoSizeStrategy} />
             </div>

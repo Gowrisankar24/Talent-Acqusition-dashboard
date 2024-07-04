@@ -77,21 +77,20 @@ const Application = () => {
   return (
     <>
       <Card
-        className=" shadow-2xl"
+        className="shadow-2xl"
         title={
           <>
             <Row>
               <Col xs={24} md={7} className="mt-1">
-                <span className="text-base">Application&#39;s Info</span>
+                <span className="text-base font-sans">Application&#39;s Info</span>
               </Col>
-              <Col xs={24} md={13} className="flex mt-2">
+              <Col xs={24} md={13} className="flex mt-2 font-sans">
                 <div className="h-4 w-4 rounded-sm bg-[#277ACC]"></div>
-                <span className="ml-2 mr-2 text-small font-medium"> Received</span>
-
+                <span className="ml-2 mr-2 text-small font-normal font-sans"> Received</span>
                 <div className="h-4 w-4 ml-2 rounded-sm bg-[#002B55]"></div>
-                <span className="ml-2 text-small"> Processed</span>
+                <span className="ml-2 text-small font-normal font-sans"> Processed</span>
               </Col>
-              <Col xs={24} md={4} className="float-right">
+              <Col xs={24} md={4} className="float-right font-sans">
                 <Select
                   defaultValue="Month"
                   style={{
@@ -111,7 +110,7 @@ const Application = () => {
                       label: "Date",
                     }
                   ]}
-                  className="font-medium text-small"
+                  className="font-medium text-small font-sans"
                 />
               </Col>
             </Row>
@@ -129,7 +128,7 @@ const Application = () => {
               left: 10,
             }}
           >
-            <XAxis dataKey="name" scale="band" />
+            <XAxis dataKey="name" tickLine={false} interval={'preserveStart'} />
             <YAxis />
             <Tooltip />
             <Bar dataKey="pv" barSize={30} fill="#277ACC" isAnimationActive={true} animationDuration={800} radius={[4, 4, 0, 0]} />

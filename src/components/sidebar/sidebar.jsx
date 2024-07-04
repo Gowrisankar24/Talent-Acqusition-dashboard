@@ -33,13 +33,12 @@ const items = [
   getItem("", "9", <img src={logo9} className="w-6 h-6"></img>),
 ];
 const Sidebar = () => {
-
   return (
     <Layout className="min-h-screen mt-14">
       <Sider className="!min-w-20 !max-w-20 !w-20 rounded-tr-3xl !bg-white shadow-2xl">
         <Menu mode="inline" items={items} className="my-3" />
       </Sider>
-      <Content>
+      <Content className="w-screen flex gap-0">
         <Full />
       </Content>
     </Layout>

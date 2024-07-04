@@ -13,12 +13,12 @@ import { Candidatestatus } from "./candidatestatus/candidatestatus";
 export const Full = () => {
   return (
     <>
-      <Row className="ml-10">
+      <Row className="ml-10 w-screen font-sans">
         <Col xs={24} md={24}>
-          <h1 className="text-xl font-medium">HR Employee</h1>
+          <h1 className="text-xl font-medium font-sans">HR Employee</h1>
         </Col>
         <Col xs={24} md={24}>
-          <p className="text-sm mt-3">
+          <p className="text-sm mt-3 font-sans">
             Enjoy your selecting potential candidates Tracking and Management
             System.
           </p>
@@ -38,6 +38,7 @@ export const Full = () => {
           <Postedjobs />
           <Col xs={24} md={24} className="h-4"></Col>
           <Candidatestatus />
+          <Col xs={24} md={24} className="h-8"></Col>
         </Col>
         <Col xs={24} md={7} className="ml-4">
           <Col xs={23}>
