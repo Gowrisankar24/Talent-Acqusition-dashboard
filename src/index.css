@@ -34,17 +34,17 @@ span.react-calendar__navigation__label__labelText.react-calendar__navigation__la
     @apply font-sans;
 }
 
-.interview-info::-webkit-scrollbar-track {
+.interview-info::-webkit-scrollbar-track, .ag-theme-quartz.interview-info::-webkit-scrollbar-track {
     background: #bdbec2 !important;
     border: 0.22rem solid transparent;
     background-clip: content-box;
 }
-.interview-info::-webkit-scrollbar {
+.interview-info::-webkit-scrollbar, .ag-theme-quartz.interview-info::-webkit-scrollbar  {
     width: 0.7rem;
     height: 0.8rem;
 }
-.interview-info::-webkit-scrollbar-thumb {
-    background: #0d99ff;
+.interview-info::-webkit-scrollbar-thumb,.ag-theme-quartz.interview-info::-webkit-scrollbar-thumb  {
+    background: #0d99ff !important;
     border-radius: 5px;
 }
 .react-calendar__month-view__days__day--weekend{
@@ -89,4 +89,7 @@ span.react-calendar__navigation__label__labelText.react-calendar__navigation__la
 }
 .ag-header-cell-resize{
     visibility: hidden !important;
+}
+.ag-header-cell-text{
+    font-weight: 600 !important;
 }

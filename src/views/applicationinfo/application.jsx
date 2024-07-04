@@ -132,7 +132,7 @@ const Application = () => {
             <YAxis />
             <Tooltip />
             <Bar dataKey="pv" barSize={30} fill="#277ACC" isAnimationActive={true} animationDuration={800} radius={[4, 4, 0, 0]} />
-            <Line type="monotone" dataKey="uv" stroke="#002B55" dot={false} strokeWidth={2} />
+            <Line type="monotone" dataKey="uv" stroke="#002B55" dot={false} strokeWidth={3} />
           </ComposedChart>
         </ResponsiveContainer>
       </Card>

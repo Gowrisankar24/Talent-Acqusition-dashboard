@@ -5,8 +5,8 @@ export const Upcomings = () => {
     <>
       <Row gutter={(16, 16)} className='flex mt-5 mb-5'>
         <Col span={24} className="flex flex-row justify-between">
-          <h1 className='mt-1 text-base font-medium font-sans'>Upcomings</h1>
-          <span className=' mt-2 inline-block border-b-2 border-[#0A66C2] text-[#0A66C2] font-sans'>View All</span>
+          <span className='mt-1 text-base font-sans font-bold'>Upcomings</span>
+          <span className=' mt-2 inline-block border-b-2 border-[#0A66C2] text-[#0A66C2] font-sans cursor-pointer'>View All</span>
         </Col>
       </Row>
       <Row gutter={(16, 16)} className='mt-5 mb-5'>

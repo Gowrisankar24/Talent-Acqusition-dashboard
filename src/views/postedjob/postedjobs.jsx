@@ -18,10 +18,10 @@ export const Postedjobs = () => {
             <Row className="mb-3">
               <Col span={24} className="h-6"></Col>
               <Col xs={8} md={5} className="mt-1">
-                <span className="text-base font-medium font-sans">Posted Jobs</span>
+                <span className="text-base font-sans font-bold">Posted Jobs</span>
               </Col>
               <Col xs={4} md={3} className="mt-2">
-                <span className="font-normal tracking-wide inline-block border-b-2 border-[#0A66C2] text-[#0A66C2] font-sans">
+                <span className="font-normal tracking-wide inline-block border-b-2 border-[#0A66C2] text-[#0A66C2] font-sans cursor-pointer">
                   View All
                 </span>
               </Col>

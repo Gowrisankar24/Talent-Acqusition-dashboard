@@ -38,7 +38,7 @@ export const Candidatestatus = () => {
         return <span>{params?.value}</span>
       }
     },
-    { field: "totalmarks", headerName: "Total Marks" },
+    { field: "totalmarks", headerName: "Total Marks", width: 170 },
     {
       field: "status", headerName: "Status", cellRenderer: (params) => {
         if (params?.value === 'Active') {
@@ -76,10 +76,10 @@ export const Candidatestatus = () => {
             <Row>
               <Col span={24} className="h-6"></Col>
               <Col xs={8} md={6}>
-                <h1 className="text-base font-medium">Candidate Status</h1>
+                <span className="text-base font-sans">Candidate Status</span>
               </Col>
               <Col xs={5} md={4} className="mt-1">
-                <div className="inline-block border-b-2 border-[#0A66C2] font-medium text-[#0A66C2]">
+                <div className="inline-block border-b-2 border-[#0A66C2] font-medium font-sans text-[#0A66C2] cursor-pointer">
                   View All
                 </div>
               </Col>
@@ -111,8 +111,8 @@ export const Candidatestatus = () => {
         <Row gutter={(16, 16)}>
           <Col span={24}>
             <div
-              className="ag-theme-quartz interview-info font-sans" // applying the grid theme
-              style={{ height: 350 }} // the grid will fill the size of the parent container
+              className="ag-theme-quartz interview-info font-sans"
+              style={{ height: 350 }}
             >
               <AgGridReact rowData={rowData} columnDefs={colDefs} autoSizeStrategy={autoSizeStrategy} />
             </div>

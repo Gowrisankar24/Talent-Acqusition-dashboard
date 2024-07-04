@@ -15,7 +15,7 @@ export const InterviewInfo = () => {
           <Row>
             <Col span={24} className="h-6"></Col>
             <Col span={23} className="mb-2">
-              <h1 className="tracking-wide text-base font-medium">Today Interviews Meetings Info</h1>
+              <span className="tracking-wide text-base font-sans">Today Interviews Meetings Info</span>
             </Col>
             <Col span={1} className="mb-2">
               <MoreOutlined className="float-right font-bold text-lg" />
