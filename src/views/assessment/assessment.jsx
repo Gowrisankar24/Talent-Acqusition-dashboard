@@ -1,10 +1,10 @@
 import React from "react";
-import { Card, Row, Col,Button } from "antd";
+import { Card, Row, Col, Button } from "antd";
 import checklist from "../../assets/Checklist.png";
 import officegirlsm from "../../assets/officegirlsm.png";
 import officegirllg from "../../assets/officegirllg.png";
 
-export const Assessment = ()=> {
+export const Assessment = () => {
   return (
     <>
       <Card className="ml-3 bg-[linear-gradient(74deg,_#0A66C2_6.27%,_#5994CE_90.96%)] !p-0 shadow-2xl">
@@ -24,10 +24,10 @@ export const Assessment = ()=> {
             <h1 className=" text-white font-bold text-3xl">0033</h1>
           </Col>
           <Col span={16} className="mt-5">
-          <span className=" text-white text-lg">New Assessment&#39;s</span>
+            <span className=" text-white text-lg">New Assessment&#39;s</span>
           </Col>
           <Col span={8} className="mt-3">
-          <Button className="rounded-none font-medium">View Details</Button>
+            <Button className="rounded-none font-medium">View Details</Button>
           </Col>
         </Row>
       </Card>

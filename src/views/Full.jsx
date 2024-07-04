@@ -1,16 +1,16 @@
 import React from "react";
 import { Row, Col } from "antd";
 import Application from "./applicationinfo/application";
-import {Assessment} from "./assessment/assessment";
-import {InterviewInfo} from "./Interviews/interviewInfo";
-import {CalendarInfo} from "./Interviews/calendar";
-import {Upcomings} from "./upcomings/upcomings";
-import {Postedjobs} from "./postedjob/postedjobs";
-import {Activity }from "./activity/activity";
-import {Hiringcandidates} from "./hirincandidates/hiringcandidates";
-import {Candidatestatus} from "./candidatestatus/candidatestatus";
+import { Assessment } from "./assessment/assessment";
+import { InterviewInfo } from "./Interviews/interviewInfo";
+import { CalendarInfo } from "./Interviews/calendar";
+import { Upcomings } from "./upcomings/upcomings";
+import { Postedjobs } from "./postedjob/postedjobs";
+import { Activity } from "./activity/activity";
+import { Hiringcandidates } from "./hirincandidates/hiringcandidates";
+import { Candidatestatus } from "./candidatestatus/candidatestatus";
 
-export const Full=()=> {
+export const Full = () => {
   return (
     <>
       <Row className="ml-10">

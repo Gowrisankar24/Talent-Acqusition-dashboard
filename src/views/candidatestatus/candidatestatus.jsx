@@ -7,52 +7,57 @@ import { AgGridReact } from "ag-grid-react"; // React Data Grid Component
 import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the grid
 import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the grid
 
-export const Candidatestatus=()=> {
+export const Candidatestatus = () => {
   const Search = Input;
   const rowData = [
-    { Jobid: "#001", Name: "John Doe", Position: "Designer", level1: "6/10",level2:"7/10",level3:"3/10",level4:"...",totalmarks:"...",status:"Active",action:"" },
-    { Jobid: "#002", Name: "John Smith", Position: "Angular Developer", level1: "6/10",level2:"5/10",level3:"5/10",level4:"8/10",totalmarks:"24/40",status:"Hired",action:"" },
-    { Jobid: "#003", Name: "Johnson Smith", Position: "Python Developer", level1: "6/10",level2:"7/10",level3:"3/10",level4:"...",totalmarks:"...",status:"Active",action:"" },
-    { Jobid: "#004", Name: "Stella", Position: "Python Developer", level1: "6/10",level2:"2/10",level3:"",level4:"",totalmarks:"24/40",status:"Reject",action:"" },
-    { Jobid: "#005", Name: "Randy", Position: "IOS Developer", level1: "6/10",level2:"7/10",level3:"3/10",level4:"...",totalmarks:"...",status:"Active",action:"" },
-    { Jobid: "#006", Name: "John Doe", Position: "Junior Designer", level1: "6/10",level2:"7/10",level3:"3/10",level4:"...",totalmarks:"...",status:"Active",action:"" },
+    { Jobid: "#001", Name: "John Doe", Position: "Designer", level1: "6/10", level2: "7/10", level3: "3/10", level4: "...", totalmarks: "...", status: "Active", action: "" },
+    { Jobid: "#002", Name: "John Smith", Position: "Angular Developer", level1: "6/10", level2: "5/10", level3: "5/10", level4: "8/10", totalmarks: "24/40", status: "Hired", action: "" },
+    { Jobid: "#003", Name: "Johnson Smith", Position: "Python Developer", level1: "6/10", level2: "7/10", level3: "3/10", level4: "...", totalmarks: "...", status: "Active", action: "" },
+    { Jobid: "#004", Name: "Stella", Position: "Python Developer", level1: "6/10", level2: "2/10", level3: "", level4: "", totalmarks: "24/40", status: "Reject", action: "" },
+    { Jobid: "#005", Name: "Randy", Position: "IOS Developer", level1: "6/10", level2: "7/10", level3: "3/10", level4: "...", totalmarks: "...", status: "Active", action: "" },
+    { Jobid: "#006", Name: "John Doe", Position: "Junior Designer", level1: "6/10", level2: "7/10", level3: "3/10", level4: "...", totalmarks: "...", status: "Active", action: "" },
   ];
 
   const colDefs = [
-    { field: "Jobid",headerName:"Job ID" },
-    { field: "Name",headerName:"Name" },
-    { field: "Position",headerName:"Position" },
-    { field: "level1",headerName:"1st Level" },
-    { field: "level2",headerName:"2nd Level" },
-    { field: "level3",headerName:"3rd Level" ,
-      cellRenderer:(params)=>{
-      if(params?.value===''){ return <span className="text-center"><i className="fad fa-times-circle text-[#de3a2f] font-medium text-base"/></span>}
-      return <span>{params?.value}</span>
-    } 
-  },
-    { field: "level4",headerName:"4th Level",
-      cellRenderer:(params)=>{
-        if(params?.value===''){ return <span className="text-center"><i className="fad fa-times-circle text-[#de3a2f] font-medium text-base"/></span>}
+    { field: "Jobid", headerName: "Job ID" },
+    { field: "Name", headerName: "Name" },
+    { field: "Position", headerName: "Position" },
+    { field: "level1", headerName: "1st Level" },
+    { field: "level2", headerName: "2nd Level" },
+    {
+      field: "level3", headerName: "3rd Level",
+      cellRenderer: (params) => {
+        if (params?.value === '') { return <span className="text-center"><i className="fad fa-times-circle text-[#de3a2f] font-medium text-base" /></span> }
         return <span>{params?.value}</span>
-      } 
-     },
-    { field: "totalmarks",headerName:"Total Marks" },
-    { field: "status",headerName:"Status", cellRenderer:(params)=>{
-      if(params?.value ==='Active'){
-        return <span className="text-[#e3904b] bg-[#ebcaae] p-1 space-x-2 font-medium">{params?.value}</span>;
       }
-      else if(params?.value ==='Reject'){
-        return <span className="text-[#de3a2f] bg-[#ff9b94] p-1 space-x-2 font-medium">{params?.value}</span>;
-      }
-      else if(params?.value ==='Hired'){
-        return <span className="text-[#55c96a] bg-[#a2f5b1] p-1 space-x-2 font-medium">{params?.value}</span>;
-      }
-    } },
-    { field: "actions",headerName:"Actions", cellRenderer :()=>{
-      return <span><i className="fad fa-eye"/></span>
     },
-    cellStyle: { textAlign: 'center' }
-   },
+    {
+      field: "level4", headerName: "4th Level",
+      cellRenderer: (params) => {
+        if (params?.value === '') { return <span className="text-center"><i className="fad fa-times-circle text-[#de3a2f] font-medium text-base" /></span> }
+        return <span>{params?.value}</span>
+      }
+    },
+    { field: "totalmarks", headerName: "Total Marks" },
+    {
+      field: "status", headerName: "Status", cellRenderer: (params) => {
+        if (params?.value === 'Active') {
+          return <span className="text-[#e3904b] bg-[#ebcaae] p-1 space-x-2 font-medium">{params?.value}</span>;
+        }
+        else if (params?.value === 'Reject') {
+          return <span className="text-[#de3a2f] bg-[#ff9b94] p-1 space-x-2 font-medium">{params?.value}</span>;
+        }
+        else if (params?.value === 'Hired') {
+          return <span className="text-[#55c96a] bg-[#a2f5b1] p-1 space-x-2 font-medium">{params?.value}</span>;
+        }
+      }
+    },
+    {
+      field: "actions", headerName: "Actions", cellRenderer: () => {
+        return <span><i className="fad fa-eye" /></span>
+      },
+      cellStyle: { textAlign: 'center' }
+    },
 
   ];
 
@@ -60,7 +65,7 @@ export const Candidatestatus=()=> {
     type: 'fitGridWidth',
     defaultMinWidth: 100,
 
-};
+  };
 
   return (
     <>

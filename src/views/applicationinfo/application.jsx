@@ -26,7 +26,7 @@ const Application = () => {
       name: "Mar",
       uv: 1200,
       pv: 4000,
-      
+
     },
     {
       name: "Apr",
@@ -66,7 +66,7 @@ const Application = () => {
     {
       name: "Nov",
       uv: 400,
-      pv: 3600, 
+      pv: 3600,
     },
     {
       name: "Dec",
@@ -78,7 +78,7 @@ const Application = () => {
   return (
     <>
       <Card
-      className=" shadow-2xl"
+        className=" shadow-2xl"
         title={
           <>
             <Row>
@@ -100,9 +100,9 @@ const Application = () => {
                   }}
                   options={[
                     {
-                        value: "Year",
-                        label: "Year",
-                      },
+                      value: "Year",
+                      label: "Year",
+                    },
                     {
                       value: "Month",
                       label: "Month",
@@ -133,7 +133,7 @@ const Application = () => {
             <XAxis dataKey="name" scale="band" />
             <YAxis />
             <Tooltip />
-            <Bar dataKey="pv" barSize={30} fill="#277ACC" isAnimationActive={true} animationDuration={800} radius={[4,4,0,0]} />
+            <Bar dataKey="pv" barSize={30} fill="#277ACC" isAnimationActive={true} animationDuration={800} radius={[4, 4, 0, 0]} />
             <Line type="monotone" dataKey="uv" stroke="#002B55" dot={false} strokeWidth={2} />
           </ComposedChart>
         </ResponsiveContainer>

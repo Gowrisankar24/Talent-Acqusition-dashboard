@@ -12,7 +12,7 @@ import { Layout, Menu } from "antd";
 import { Full } from "../../views/Full";
 
 
-const { Sider,Content } = Layout;
+const { Sider, Content } = Layout;
 function getItem(label, key, icon, children) {
   return {
     key,
@@ -27,20 +27,20 @@ const items = [
   getItem("", "3", <img src={logo3} className="w-6 h-6"></img>),
   getItem("", "4", <img src={logo4} className="w-6 h-6"></img>),
   getItem("", "5", <img src={logo5} className="w-6 h-6"></img>),
-  getItem("", "6",<img src={logo6} className="w-6 h-6"></img>),
+  getItem("", "6", <img src={logo6} className="w-6 h-6"></img>),
   getItem("", "7", <img src={logo7} className="w-6 h-6"></img>),
   getItem("", "8", <img src={logo8} className="w-6 h-6"></img>),
-  getItem("", "9",<img src={logo9} className="w-6 h-6"></img>),
+  getItem("", "9", <img src={logo9} className="w-6 h-6"></img>),
 ];
 const Sidebar = () => {
 
   return (
     <Layout className="min-h-screen mt-14">
       <Sider className="!min-w-20 !max-w-20 !w-20 rounded-tr-3xl !bg-white shadow-2xl">
-        <Menu mode="inline" items={items} className="my-3"/>
+        <Menu mode="inline" items={items} className="my-3" />
       </Sider>
       <Content>
-        <Full/>
+        <Full />
       </Content>
     </Layout>
   );

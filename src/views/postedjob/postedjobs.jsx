@@ -7,12 +7,12 @@ import java from "../../assets/java.png";
 import python from "../../assets/python.png";
 import UI from "../../assets/UI.png";
 import Angular from "../../assets/Angular.png";
-export const Postedjobs=()=> {
+export const Postedjobs = () => {
   const Search = Input;
   return (
     <>
       <Card
-      className=" shadow-2xl"
+        className=" shadow-2xl"
         title={
           <>
             <Row className="mb-2">
