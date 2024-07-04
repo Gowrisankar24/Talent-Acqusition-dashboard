@@ -8,7 +8,6 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-
 import { Card, Row, Col, Select } from "antd";
 const Application = () => {
   const data = [
