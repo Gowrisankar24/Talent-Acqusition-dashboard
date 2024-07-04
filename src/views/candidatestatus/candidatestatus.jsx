@@ -76,7 +76,7 @@ export const Candidatestatus = () => {
             <Row>
               <Col span={24} className="h-6"></Col>
               <Col xs={8} md={6}>
-                <span className="text-base font-sans">Candidate Status</span>
+                <span className="text-base font-sans font-bold">Candidate Status</span>
               </Col>
               <Col xs={5} md={4} className="mt-1">
                 <div className="inline-block border-b-2 border-[#0A66C2] font-medium font-sans text-[#0A66C2] cursor-pointer">
